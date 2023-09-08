@@ -1,14 +1,6 @@
-package com.seeri.technicaltest.persistance.entity;
+package com.seeri.technicaltest.domain;
 
-import org.w3c.dom.Text;
-
-import javax.persistence.*;
-
-@Entity
-@Table(name="tasks")
 public class Task {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String title;
     private String description;
