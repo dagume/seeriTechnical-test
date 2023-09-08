@@ -6,8 +6,8 @@ services:
       - '5432:5432'
     environment:
       POSTGRES_USER: 'postgres'
-      POSTGRES_PASSWORD: 'platzi'
-      POSTGRES_DB: 'platzi-market'
+      POSTGRES_PASSWORD: 'secret'
+      POSTGRES_DB: 'seeriDB'
     volumes:
       - db-data:/var/lib/postgresql/data/
       # - ./db:/docker-entrypoint-initdb.d
